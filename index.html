@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Torquix — Tire Size, Wheel Offset &amp; Car Running-Cost Calculators</title>
+<meta name="description" content="Ten free car calculators: compare two tire sizes to scale, work out wheel offset and backspacing with rim width included, check speedometer error, gearing RPM, fuel and EV charging cost, towing payload, tire pressure and compression ratio. Runs entirely in your browser." />
+<meta name="keywords" content="tire size calculator, tire size comparison, wheel offset calculator, backspacing calculator, speedometer error calculator, gear ratio calculator, fuel economy converter, EV charging cost calculator, towing payload calculator, tire pressure temperature calculator, compression ratio calculator" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://torquix.com/" />
+<link rel="alternate" hreflang="en" href="https://torquix.com/" />
+<link rel="alternate" hreflang="zh-CN" href="https://torquix.com/?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://torquix.com/" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Torquix" />
+<meta property="og:title" content="Torquix — Tire Size, Wheel Offset &amp; Car Running-Cost Calculators" />
+<meta property="og:description" content="Compare tire sizes to scale, get real poke and inner clearance with rim width in the offset maths, and price what the car actually costs to drive. Ten tools, 100% in-browser." />
+<meta property="og:url" content="https://torquix.com/" />
+<meta property="og:image" content="https://torquix.com/og-image.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Torquix — Tire, Wheel &amp; Running-Cost Calculators" />
+<meta name="twitter:description" content="Ten in-browser car calculators with live to-scale diagrams. Free, bilingual, nothing uploaded." />
+<meta name="twitter:image" content="https://torquix.com/og-image.png" />
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://torquix.com/#website",
+      "url": "https://torquix.com/",
+      "name": "Torquix",
+      "description": "Free browser-based tire, wheel and vehicle running-cost calculators.",
+      "inLanguage": ["en", "zh-CN"],
+      "publisher": { "@id": "https://torquix.com/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://torquix.com/#org",
+      "name": "Torquix",
+      "url": "https://torquix.com/",
+      "logo": "https://torquix.com/og-image.png",
+      "description": "Torquix builds privacy-first, client-side calculators for tire fitment, wheel offset and vehicle running costs."
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://torquix.com/#app",
+      "name": "Torquix Car Calculators",
+      "url": "https://torquix.com/",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": "Tire size comparison, Wheel offset and backspacing calculator, Speedometer error calculator, Gear ratio and cruising RPM calculator, Fuel economy converter, Trip fuel cost calculator, EV charging cost and time calculator, Towing and payload check, Tire pressure temperature calculator, Engine displacement and compression ratio calculator"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://torquix.com/#tools",
+      "name": "Torquix car calculators",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Tire Size Comparison", "url": "https://torquix.com/tools/tire-size-comparison.html" },
+        { "@type": "ListItem", "position": 2, "name": "Wheel Offset & Backspacing", "url": "https://torquix.com/tools/wheel-offset-backspacing.html" },
+        { "@type": "ListItem", "position": 3, "name": "Speedometer & Odometer Error", "url": "https://torquix.com/tools/speedometer-error-calculator.html" },
+        { "@type": "ListItem", "position": 4, "name": "Gear Ratio & Cruising RPM", "url": "https://torquix.com/tools/gear-ratio-rpm-calculator.html" },
+        { "@type": "ListItem", "position": 5, "name": "Fuel Economy Converter", "url": "https://torquix.com/tools/fuel-economy-converter.html" },
+        { "@type": "ListItem", "position": 6, "name": "Trip Fuel Cost", "url": "https://torquix.com/tools/trip-fuel-cost-calculator.html" },
+        { "@type": "ListItem", "position": 7, "name": "EV Charging Cost & Time", "url": "https://torquix.com/tools/ev-charging-cost-calculator.html" },
+        { "@type": "ListItem", "position": 8, "name": "Towing & Payload Check", "url": "https://torquix.com/tools/towing-payload-calculator.html" },
+        { "@type": "ListItem", "position": 9, "name": "Tire Pressure & Temperature", "url": "https://torquix.com/tools/tire-pressure-temperature-calculator.html" },
+        { "@type": "ListItem", "position": 10, "name": "Displacement & Compression Ratio", "url": "https://torquix.com/tools/engine-displacement-compression-calculator.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://torquix.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much can I change tire diameter safely?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The widely used industry guideline is to stay within 3% of the original overall diameter. Inside that band the speedometer stays close enough, ABS and stability-control wheel-speed comparisons still behave, and an all-wheel-drive centre differential is not fighting a permanent mismatch. Torquix flags the moment you cross 3% and again at 5%, where the effects stop being subtle." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do most wheel offset calculators give the wrong answer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Because they compare offsets without asking for rim width. Offset is measured from the wheel's centreline, so a 9-inch wheel at ET35 sits half an inch further out than an 8-inch wheel at the same ET. Torquix asks for both widths, both offsets, spacer thickness and both tire section widths, then reports outer poke and inner clearance separately." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my speedometer wrong even with stock tires?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Almost certainly, and deliberately. UNECE Regulation 39 and EU Directive 2000/7/EC permit a speedometer to read up to 10% plus 4 km/h above true speed, but never below it. That is why a GPS check on a stock car usually shows you travelling a little slower than the dial says." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my tire pressure warning light come on when it gets cold?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Gauge pressure follows absolute temperature. Cooling a tire from 21°C to 4°C drops it by roughly 1.5 to 2 psi, and a car set slightly low in autumn can cross the TPMS trigger point on the first frosty morning. Under FMVSS 138 that warning fires at 25% below the placard pressure, which Torquix calculates for you." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are these calculations exact for my specific vehicle?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The geometry and physics are exact for the numbers you enter, but real vehicles add variables Torquix cannot see: a loaded tire has a smaller rolling radius than its theoretical diameter, brake calipers and fender liners decide real clearance, and manufacturers build the same size code to slightly different dimensions. Treat the output as a well-founded prediction, then verify on the car." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does anything I type get uploaded?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Every calculation runs in JavaScript inside your browser. Nothing you enter is sent to a server or stored. Only your language, theme and unit-system preferences are saved in local storage on your own device." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Torquix in metric and in Chinese?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. One switch converts every input and result between US units and metric, converting the values you have already typed rather than clearing them, and the whole interface including result labels, formula notes and warnings switches between English and 简体中文." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="21" fill="none" stroke="currentColor" stroke-width="7" style="color:var(--primary)"/><circle cx="32" cy="32" r="10" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+      Torquix
+    </a>
+    <nav class="nav-links">
+      <a href="#tools" data-i18n="nav_tools">Calculators</a>
+      <a href="#how" data-i18n="nav_how">How it works</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Free · Private · No sign-up</p>
+      <h1 data-i18n="hero_title">Run the numbers before you buy the wheels</h1>
+      <p class="hero-sub" data-i18n="hero_sub">Ten car calculators that answer the questions a parts page never does: will this tire fit, how far will it poke, how wrong is my speedometer, and what will it actually cost to drive.</p>
+      <a class="btn" href="#tools" data-i18n="hero_cta">Open the calculators</a>
+      <ul class="hero-points">
+        <li data-i18n="hp1">Wheel width included in the offset math</li>
+        <li data-i18n="hp2">Live to-scale tire &amp; fitment diagrams</li>
+        <li data-i18n="hp3">Imperial and metric, both ways</li>
+        <li data-i18n="hp4">Runs 100% in your browser</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="tools" id="tools">
+    <div class="container">
+      <h2 data-i18n="tools_title">Ten car calculators</h2>
+      <p class="section-sub" data-i18n="tools_sub">Pick a job, type your specs, and read the answer straight off the diagram. Nothing is uploaded.</p>
+      <div id="tools-root"></div>
+      <noscript>
+        <p style="margin-top:16px"><strong>Torquix needs JavaScript.</strong> Every calculation runs locally in your browser, so nothing works with scripting disabled. 本站计算全部在浏览器本地完成，需要启用 JavaScript。</p>
+      </noscript>
+    </div>
+  </section>
+
+  <section class="about" id="how">
+    <div class="container">
+      <h2 data-i18n="how_title">How Torquix works</h2>
+      <p class="section-sub" data-i18n="how_sub">Every tool is the same three moves: turn a spec code into real geometry, apply the physics, then translate it back into something you can act on.</p>
+      <div class="about-grid">
+        <div class="card">
+          <h3 data-i18n="how1_t">1. Decode the spec</h3>
+          <p data-i18n="how1_d">225/45R17 is not a size, it is three numbers in three different units. Torquix converts sidewall percentages, rim inches and section millimetres into one honest diameter before anything else happens.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="how2_t">2. Apply the physics</h3>
+          <p data-i18n="how2_d">Rolling circumference drives speedometer error and gearing. Offset and rim width place the wheel relative to the hub face. Gay-Lussac's law moves tire pressure with temperature. Same equations a workshop uses.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="how3_t">3. Make it a decision</h3>
+          <p data-i18n="how3_d">A number is useless until it is a yes or a no. Torquix flags the ±3% diameter rule, tongue-weight ranges, TPMS trigger thresholds and cost-per-mile so you leave with an answer, not homework.</p>
+        </div>
+      </div>
+
+      <h2 style="margin-top:36px" data-i18n="vision_title">Who this is for</h2>
+      <p class="section-sub" data-i18n="vision_d">Torquix is built for the person standing in front of a wheel-and-tire listing at 11pm, for the owner who just fitted bigger tires and does not trust the speedometer, for the family pricing a road trip, and for the driver working out whether an EV actually pays. Shops have these numbers. Now you do too.</p>
+
+      <h2 style="margin-top:36px" data-i18n="sources_title">Where the numbers come from</h2>
+      <p class="section-sub">
+        <span class="bi-en">Torquix uses published standards and unit definitions rather than house rules. Every constant below is checkable, and where a figure is a convention rather than a law we say so in the tool itself.</span>
+        <span class="bi-zh">Torquix 采用公开发布的标准和单位定义，而不是自定规则。下列每一个常量都可以自行核对；凡属行业惯例而非强制标准的，工具内部也会明确说明。</span>
+      </p>
+      <ul class="source-list">
+        <li>
+          <span class="bi-en">Unit conversion constants (inch = 25.4 mm exactly, mile = 1.609344 km, US gallon = 3.785411784 L, pound = 0.45359237 kg) — </span>
+          <span class="bi-zh">单位换算常量（1 英寸 = 25.4 mm 精确值、1 英里 = 1.609344 km、1 美制加仑 = 3.785411784 L、1 磅 = 0.45359237 kg）—— </span>
+          <a href="https://www.nist.gov/pml/special-publication-811" target="_blank" rel="noopener nofollow">NIST Special Publication 811, Guide for the Use of the SI</a>
+        </li>
+        <li>
+          <span class="bi-en">TPMS warning threshold of 25% below the placard pressure — </span>
+          <span class="bi-zh">TPMS 在低于铭牌胎压 25% 时报警的阈值 —— </span>
+          <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/subpart-B/section-571.138" target="_blank" rel="noopener nofollow">FMVSS No. 138, 49 CFR §571.138</a>
+        </li>
+        <li>
+          <span class="bi-en">Speedometers may over-read but never under-read — </span>
+          <span class="bi-zh">码表允许偏高读数、但不得偏低的规定 —— </span>
+          <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32000L0007" target="_blank" rel="noopener nofollow">Directive 2000/7/EC on speedometers for two- and three-wheel motor vehicles</a>
+          <span class="bi-en"> and UNECE Regulation No. 39 for cars</span>
+          <span class="bi-zh">，乘用车对应联合国 UNECE R39 法规</span>
+        </li>
+        <li>
+          <span class="bi-en">Tailpipe CO₂ factors of 8.887 kg per gallon of gasoline and 10.180 kg per gallon of diesel — </span>
+          <span class="bi-zh">尾气 CO₂ 排放因子：汽油 8.887 kg/加仑、柴油 10.180 kg/加仑 —— </span>
+          <a href="https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references" target="_blank" rel="noopener nofollow">US EPA Greenhouse Gas Equivalencies Calculator references</a>
+        </li>
+        <li>
+          <span class="bi-en">Placard pressure, load rating and the reason not to use the sidewall number — </span>
+          <span class="bi-zh">铭牌胎压、载重指数，以及为什么不能照抄胎侧数字 —— </span>
+          <a href="https://www.nhtsa.gov/equipment/tires" target="_blank" rel="noopener nofollow">NHTSA tire safety information</a>
+        </li>
+        <li>
+          <span class="bi-en">Barometric pressure versus altitude, used by the tire pressure tool — </span>
+          <span class="bi-zh">胎压工具所用的大气压随海拔变化关系 —— </span>
+          <a href="https://www.weather.gov/media/epz/wxcalc/pressureAltitude.pdf" target="_blank" rel="noopener nofollow">US National Weather Service pressure–altitude formulation</a>
+        </li>
+        <li>
+          <span class="bi-en">Published fuel economy figures to sanity-check your own — </span>
+          <span class="bi-zh">可用于核对自己油耗的官方公布值 —— </span>
+          <a href="https://www.fueleconomy.gov/" target="_blank" rel="noopener nofollow">fueleconomy.gov, US DOE and EPA</a>
+        </li>
+      </ul>
+      <p class="section-sub" style="margin-top:14px;font-size:0.9rem">
+        <span class="bi-en">Torquix is not affiliated with, endorsed by or sponsored by any organisation listed above. Links are provided so you can verify the underlying figures yourself.</span>
+        <span class="bi-zh">Torquix 与上述任何机构均无关联、未获其背书或赞助。列出链接仅为方便你自行核对数据来源。</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 data-i18n="faq_title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">How much can I change tire diameter safely?</span><span class="bi-zh">轮胎外径最多能改多少？</span></summary>
+          <p><span class="bi-en">The widely used industry guideline is to stay within 3% of the original overall diameter. Inside that band the speedometer stays close enough, ABS and stability-control wheel-speed comparisons still behave, and an all-wheel-drive centre differential is not fighting a permanent mismatch. Torquix flags the moment you cross 3% and again at 5%, where the effects stop being subtle.</span><span class="bi-zh">行业通行的建议是把外径变化控制在原车的 3% 以内。在这个范围内，码表误差可以接受，ABS 和车身稳定系统的轮速比对仍然正常，四驱车的中央差速器也不会长期处于持续打滑状态。Torquix 会在超过 3% 时给出提示，超过 5% 时再次警告——那时候各种影响就不再是「轻微」了。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Why do most wheel offset calculators give the wrong answer?</span><span class="bi-zh">为什么多数偏距计算器算出来是错的？</span></summary>
+          <p><span class="bi-en">Because they compare offsets without asking for rim width. Offset is measured from the wheel's centreline, so a 9-inch wheel at ET35 sits half an inch further out than an 8-inch wheel at the same ET. Torquix asks for both widths, both offsets, spacer thickness and both tire section widths, then reports outer poke and inner clearance separately — because those two numbers hit different parts of the car.</span><span class="bi-zh">因为它们只比偏距，却不问轮辋宽度。偏距是从轮毂中心线量起的，所以同样 ET35，9 英寸轮毂会比 8 英寸轮毂多外抛约半英寸。Torquix 会同时要求两个宽度、两个偏距、垫片厚度和两条胎宽，并把「外抛量」和「内侧间隙」分开报告——因为这两个数字影响的是车上完全不同的部位。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Is my speedometer wrong even with stock tires?</span><span class="bi-zh">原厂胎的码表也会不准吗？</span></summary>
+          <p><span class="bi-en">Almost certainly, and deliberately. UNECE Regulation 39 and EU Directive 2000/7/EC permit a speedometer to read up to 10% plus 4 km/h above true speed, but never below it. That is why a GPS check on a completely stock car usually shows you travelling a little slower than the dial claims — and it is also why fitting slightly taller tires can, by coincidence, make the reading more accurate rather than less.</span><span class="bi-zh">几乎一定不准，而且是故意的。联合国 UNECE R39 和欧盟 2000/7/EC 允许码表读数比真实车速高出 10% + 4 km/h，但绝不允许偏低。所以哪怕是完全原厂的车，用 GPS 一测通常也会比码表慢一点——这也解释了为什么换上略大一点的轮胎，有时反而会让码表读数更接近真实值。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Why does the tire pressure light come on when it gets cold?</span><span class="bi-zh">为什么一降温胎压灯就亮？</span></summary>
+          <p><span class="bi-en">Gauge pressure follows absolute temperature, not the number on the gauge. Cooling a tire from 21°C to 4°C drops it by roughly 1.5 to 2 psi, so a car set slightly low in autumn can cross the warning threshold on the first frosty morning. Under FMVSS 138 that light fires at 25% below the placard pressure — Torquix works out exactly where that point is for your car.</span><span class="bi-zh">表压跟随的是绝对温度，而不是表盘上的数字。轮胎从 21°C 降到 4°C，胎压大约下降 1.5–2 psi，所以秋天本来就打得偏低的车，第一个霜冻早晨就可能跨过报警线。按 FMVSS 138，报警点是铭牌胎压的 75%——Torquix 会替你算出这个具体数值。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Are these numbers exact for my specific vehicle?</span><span class="bi-zh">这些数字对我的车精确吗？</span></summary>
+          <p><span class="bi-en">The geometry and physics are exact for what you type, but a real car adds variables Torquix cannot see. A loaded tire has a smaller rolling radius than its theoretical diameter, brake calipers and fender liners decide real clearance, and two brands of the same size code can differ by several millimetres. Treat the output as a well-founded prediction, then verify on the car before you cut, buy or tow.</span><span class="bi-zh">对你输入的数值而言，几何和物理是精确的；但真实车辆还有 Torquix 看不到的变量。受载轮胎的滚动半径小于理论外径，实际间隙由卡钳和翼子板内衬决定，同一规格不同品牌之间也可能差好几毫米。请把结果当作有依据的预测，在开工、下单或挂车之前，仍要到车上实测。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Does anything I type get uploaded?</span><span class="bi-zh">我输入的内容会被上传吗？</span></summary>
+          <p><span class="bi-en">No. Every calculation runs in JavaScript inside your browser. Nothing you enter is sent to a server or stored anywhere. Only your language, theme and unit-system preferences are saved in local storage on your own device, and you can clear those at any time.</span><span class="bi-zh">不会。所有计算都在你浏览器里用 JavaScript 完成，输入内容不会发送到任何服务器，也不会被保存。只有语言、主题和单位制偏好会存在你自己设备的本地存储里，随时可以清除。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Can I use Torquix in metric and in Chinese?</span><span class="bi-zh">支持公制和中文吗？</span></summary>
+          <p><span class="bi-en">Yes. One switch converts every input and result between US units and metric, and it converts the values you have already typed instead of wiping them. The entire interface — result labels, formula notes, warning flags — switches between English and 简体中文 independently of the unit system, so you can read Chinese while working in inches, or the reverse.</span><span class="bi-zh">支持。一个开关就能把所有输入和结果在英制与公制之间切换，而且是换算你已经填好的数值，而不是清空重填。整个界面——结果标签、公式说明、警示提示——都能在英文和简体中文之间切换，且与单位制互相独立：你完全可以用中文界面配英寸单位，反之亦然。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="affiliate">
+    <div class="container">
+      <h2 data-i18n="amazon_title">Tools that pair with these calculators</h2>
+      <p class="disclosure" data-i18n="amazon_disclosure">Torquix is an Amazon Associate. As an Amazon Associate we earn from qualifying purchases. This never changes the price you pay.</p>
+      <ul class="affiliate-list">
+        <li><a href="https://www.amazon.com/s?k=digital+tire+pressure+gauge&amp;tag=torquix-20" target="_blank" rel="sponsored nofollow noopener"><span class="bi-en">Digital tire pressure gauge</span><span class="bi-zh">数显胎压表</span></a></li>
+        <li><a href="https://www.amazon.com/s?k=torque+wrench+1%2F2+inch&amp;tag=torquix-20" target="_blank" rel="sponsored nofollow noopener"><span class="bi-en">1/2&quot; torque wrench</span><span class="bi-zh">1/2 英寸扭力扳手</span></a></li>
+        <li><a href="https://www.amazon.com/s?k=tire+tread+depth+gauge&amp;tag=torquix-20" target="_blank" rel="sponsored nofollow noopener"><span class="bi-en">Tread depth gauge</span><span class="bi-zh">胎纹深度尺</span></a></li>
+        <li><a href="https://www.amazon.com/s?k=obd2+scanner&amp;tag=torquix-20" target="_blank" rel="sponsored nofollow noopener"><span class="bi-en">OBD-II scanner</span><span class="bi-zh">OBD-II 诊断仪</span></a></li>
+        <li><a href="https://www.amazon.com/s?k=hitch+tongue+weight+scale&amp;tag=torquix-20" target="_blank" rel="sponsored nofollow noopener"><span class="bi-en">Tongue weight scale</span><span class="bi-zh">舌重秤</span></a></li>
+        <li><a href="https://www.amazon.com/s?k=hub+centric+wheel+spacers&amp;tag=torquix-20" target="_blank" rel="sponsored nofollow noopener"><span class="bi-en">Hub-centric wheel spacers</span><span class="bi-zh">轮毂定位式垫片</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Torquix — private, browser-based tire, wheel and running-cost calculators.</p>
+    <p><a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Torquix is a planning and estimating aid, not a fitment guarantee or an engineering service. Real-world clearance depends on suspension travel, fender liners, brake hardware and tire construction; loaded rolling radius differs from the theoretical diameter. Always confirm against your vehicle's door-jamb placard, owner's manual and, for towing or structural changes, a qualified professional.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Torquix. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
