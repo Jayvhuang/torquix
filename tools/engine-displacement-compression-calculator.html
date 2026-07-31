@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Displacement & Compression Ratio — Torquix</title>
+<meta name="description" content="Compute engine displacement from bore, stroke and cylinder count, then find the static compression ratio from combustion-chamber volume. Useful for builds and spec checks." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://torquix.com/tools/engine-displacement-compression-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://torquix.com/tools/engine-displacement-compression-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://torquix.com/tools/engine-displacement-compression-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://torquix.com/tools/engine-displacement-compression-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Torquix" />
+<meta property="og:title" content="Displacement & Compression Ratio" />
+<meta property="og:description" content="Compute engine displacement from bore, stroke and cylinder count, then find the static compression ratio from combustion-chamber volume. Useful for builds and spec checks." />
+<meta property="og:url" content="https://torquix.com/tools/engine-displacement-compression-calculator.html" />
+<meta property="og:image" content="https://torquix.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Displacement & Compression Ratio",
+      "url": "https://torquix.com/tools/engine-displacement-compression-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Compute engine displacement from bore, stroke and cylinder count, then find the static compression ratio from combustion-chamber volume. Useful for builds and spec checks.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://torquix.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Torquix",
+          "item": "https://torquix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Displacement & Compression Ratio",
+          "item": "https://torquix.com/tools/engine-displacement-compression-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is engine displacement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the total swept volume of all cylinders — bore area times stroke times cylinder count. It is the headline 'size' of an engine (e.g. 2.0 L) and the main driver of how much air and fuel it can process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a static compression ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the ratio of the cylinder volume at bottom-dead-centre to the volume at top-dead-centre. It compares the full chamber plus the squeezed clearance volume to the clearance volume alone. Higher generally means more efficiency and power, up to the fuel's knock limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does bore and stroke matter, not just displacement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two engines with the same displacement can feel very different. A long stroke favours low-end torque; a large bore with short stroke favours high-rpm power. The ratio of bore to stroke shapes the engine's character."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "inLanguage": "zh-CN",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "什么是发动机排量？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "它是所有气缸的总扫掠容积——缸径截面积乘行程再乘缸数。它是发动机的“排量” headline（如 2.0 L），也是决定能处理多少空气与燃油的主要因素。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是静态压缩比？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "它是下止点缸内容积与上止点缸内容积之比。它把整个燃烧室加被压缩的余隙容积与余隙容积本身相比。通常越高效率与功率越大，但受燃油抗爆性上限约束。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么缸径和行程重要，而不只是排量？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "两台排量相同的发动机手感可能完全不同。长行程偏向低扭；大缸径短行程偏向高转功率。缸径与行程之比塑造了发动机的性格。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Torquix</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Calculators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All calculators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Displacement & Compression Ratio</span><span class="bi-zh">排量与压缩比</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Two numbers define an engine's breathing: displacement (how much air it pumps) and compression ratio (how tightly it squeezes it). This tool computes both from the dimensions that matter.</span><span class="bi-zh">两个数字定义了发动机的“呼吸”：排量（泵多少空气）与压缩比（压得多紧）。本工具从关键尺寸算出这两者。</span></p>
+      <div id="tools-root"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+      <p><span class="bi-en"><span class="formula-line">Displacement = (π ÷ 4) × bore² × stroke × cylinders  (single-cylinder volume × count)</span></span><span class="bi-zh"><span class="formula-line">排量 = (π ÷ 4) × 缸径² × 行程 × 缸数（单缸容积 × 缸数）</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Clearance volume = displacement ÷ (compression ratio − 1)</span></span><span class="bi-zh"><span class="formula-line">余隙容积 = 排量 ÷ (压缩比 − 1)</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Compression ratio = (displacement + clearance volume) ÷ clearance volume</span></span><span class="bi-zh"><span class="formula-line">压缩比 = (排量 + 余隙容积) ÷ 余隙容积</span></span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">What is engine displacement?</span><span class="bi-zh">什么是发动机排量？</span></summary>
+          <p><span class="bi-en">It is the total swept volume of all cylinders — bore area times stroke times cylinder count. It is the headline 'size' of an engine (e.g. 2.0 L) and the main driver of how much air and fuel it can process.</span><span class="bi-zh">它是所有气缸的总扫掠容积——缸径截面积乘行程再乘缸数。它是发动机的“排量” headline（如 2.0 L），也是决定能处理多少空气与燃油的主要因素。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">What is a static compression ratio?</span><span class="bi-zh">什么是静态压缩比？</span></summary>
+          <p><span class="bi-en">It is the ratio of the cylinder volume at bottom-dead-centre to the volume at top-dead-centre. It compares the full chamber plus the squeezed clearance volume to the clearance volume alone. Higher generally means more efficiency and power, up to the fuel's knock limit.</span><span class="bi-zh">它是下止点缸内容积与上止点缸内容积之比。它把整个燃烧室加被压缩的余隙容积与余隙容积本身相比。通常越高效率与功率越大，但受燃油抗爆性上限约束。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Why does bore and stroke matter, not just displacement?</span><span class="bi-zh">为什么缸径和行程重要，而不只是排量？</span></summary>
+          <p><span class="bi-en">Two engines with the same displacement can feel very different. A long stroke favours low-end torque; a large bore with short stroke favours high-rpm power. The ratio of bore to stroke shapes the engine's character.</span><span class="bi-zh">两台排量相同的发动机手感可能完全不同。长行程偏向低扭；大缸径短行程偏向高转功率。缸径与行程之比塑造了发动机的性格。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other calculators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="tire-size-comparison.html"><span class="bi-en">Tire Size Comparison</span><span class="bi-zh">轮胎尺寸对比</span></a></li>
+        <li><a href="wheel-offset-backspacing.html"><span class="bi-en">Wheel Offset & Backspacing</span><span class="bi-zh">轮毂偏距与内背距</span></a></li>
+        <li><a href="speedometer-error-calculator.html"><span class="bi-en">Speedometer & Odometer Error</span><span class="bi-zh">码表与里程表误差</span></a></li>
+        <li><a href="gear-ratio-rpm-calculator.html"><span class="bi-en">Gear Ratio & Cruising RPM</span><span class="bi-zh">齿比与巡航转速</span></a></li>
+        <li><a href="fuel-economy-converter.html"><span class="bi-en">Fuel Economy Converter</span><span class="bi-zh">油耗单位换算</span></a></li>
+        <li><a href="trip-fuel-cost-calculator.html"><span class="bi-en">Trip Fuel Cost</span><span class="bi-zh">行程油费</span></a></li>
+        <li><a href="ev-charging-cost-calculator.html"><span class="bi-en">EV Charging Cost & Time</span><span class="bi-zh">电动车充电成本与时间</span></a></li>
+        <li><a href="towing-payload-calculator.html"><span class="bi-en">Towing & Payload Check</span><span class="bi-zh">拖挂与载重核算</span></a></li>
+        <li><a href="tire-pressure-temperature-calculator.html"><span class="bi-en">Tire Pressure & Temperature</span><span class="bi-zh">胎压与温度换算</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Torquix — private, browser-based tire, wheel and running-cost calculators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Torquix is a planning and estimating aid, not a fitment guarantee or an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Torquix. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.TORQUIX_TOOL = "engine";</script>
+<script src="../app.js"></script>
+</body>
+</html>
