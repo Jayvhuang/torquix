@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trip Fuel Cost — Torquix</title>
+<meta name="description" content="Price a drive before you go. Enter distance, fuel economy and fuel price to see total fuel cost — works for petrol and diesel, US or metric units." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://torquix.com/tools/trip-fuel-cost-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://torquix.com/tools/trip-fuel-cost-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://torquix.com/tools/trip-fuel-cost-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://torquix.com/tools/trip-fuel-cost-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Torquix" />
+<meta property="og:title" content="Trip Fuel Cost" />
+<meta property="og:description" content="Price a drive before you go. Enter distance, fuel economy and fuel price to see total fuel cost — works for petrol and diesel, US or metric units." />
+<meta property="og:url" content="https://torquix.com/tools/trip-fuel-cost-calculator.html" />
+<meta property="og:image" content="https://torquix.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Trip Fuel Cost",
+      "url": "https://torquix.com/tools/trip-fuel-cost-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Price a drive before you go. Enter distance, fuel economy and fuel price to see total fuel cost — works for petrol and diesel, US or metric units.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://torquix.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Torquix",
+          "item": "https://torquix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Trip Fuel Cost",
+          "item": "https://torquix.com/tools/trip-fuel-cost-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does this include tolls and food?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It prices fuel only — the volume you burn times the price you pay. Tolls, parking and meals are separate and often larger than people expect on a long trip."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use real-world or sticker mpg?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a real-world figure if you have one. Highway trips often beat the combined sticker number, while loaded cars, roof boxes and mountains can fall well short of it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I handle diesel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Diesel is the same maths — volume times price — just use the diesel pump price, which is often higher per litre than petrol even when a diesel goes farther per litre."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "inLanguage": "zh-CN",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "这包含过路费和饭钱吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不包含。它只算油费——你烧掉的油量乘以单价。过路费、停车和吃饭是另算的，而且在长途里往往比人们预期的多。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "该用实际油耗还是标称油耗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "如果有实际数据就用实际的。高速行程常常优于综合标称值，而满载、车顶箱和山路则可能远不及标称。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "柴油怎么处理？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "柴油算法一样——体积乘价格——只是代入柴油泵价。即便柴油每升跑得更远，泵价每升往往也比汽油高。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Torquix</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Calculators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All calculators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Trip Fuel Cost</span><span class="bi-zh">行程油费</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">A road trip's biggest variable cost is fuel. Tell it how far you are going, what the car does on a gallon or litre, and what fuel costs, and it prices the tank stops.</span><span class="bi-zh">自驾游最大的可变成本是油费。告诉它你要走多远、车一加仑或一升能跑多少、油价多少，它就给你算出加油的花费。</span></p>
+      <div id="tools-root"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+      <p><span class="bi-en"><span class="formula-line">Fuel needed = distance ÷ fuel economy</span></span><span class="bi-zh"><span class="formula-line">所需燃油 = 距离 ÷ 油耗</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Cost = fuel needed × price per unit (gallon or litre)</span></span><span class="bi-zh"><span class="formula-line">费用 = 所需燃油 × 单价（加仑或升）</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">For mpg input: gallons = miles ÷ mpg; cost = gallons × $/gal</span></span><span class="bi-zh"><span class="formula-line">若输入 mpg：加仑数 = 英里 ÷ mpg；费用 = 加仑数 × 美元/加仑</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Diesel uses the same maths with diesel price</span></span><span class="bi-zh"><span class="formula-line">柴油用同样的算法，代入柴油价格</span></span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">Does this include tolls and food?</span><span class="bi-zh">这包含过路费和饭钱吗？</span></summary>
+          <p><span class="bi-en">No. It prices fuel only — the volume you burn times the price you pay. Tolls, parking and meals are separate and often larger than people expect on a long trip.</span><span class="bi-zh">不包含。它只算油费——你烧掉的油量乘以单价。过路费、停车和吃饭是另算的，而且在长途里往往比人们预期的多。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Should I use real-world or sticker mpg?</span><span class="bi-zh">该用实际油耗还是标称油耗？</span></summary>
+          <p><span class="bi-en">Use a real-world figure if you have one. Highway trips often beat the combined sticker number, while loaded cars, roof boxes and mountains can fall well short of it.</span><span class="bi-zh">如果有实际数据就用实际的。高速行程常常优于综合标称值，而满载、车顶箱和山路则可能远不及标称。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">How do I handle diesel?</span><span class="bi-zh">柴油怎么处理？</span></summary>
+          <p><span class="bi-en">Diesel is the same maths — volume times price — just use the diesel pump price, which is often higher per litre than petrol even when a diesel goes farther per litre.</span><span class="bi-zh">柴油算法一样——体积乘价格——只是代入柴油泵价。即便柴油每升跑得更远，泵价每升往往也比汽油高。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other calculators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="tire-size-comparison.html"><span class="bi-en">Tire Size Comparison</span><span class="bi-zh">轮胎尺寸对比</span></a></li>
+        <li><a href="wheel-offset-backspacing.html"><span class="bi-en">Wheel Offset & Backspacing</span><span class="bi-zh">轮毂偏距与内背距</span></a></li>
+        <li><a href="speedometer-error-calculator.html"><span class="bi-en">Speedometer & Odometer Error</span><span class="bi-zh">码表与里程表误差</span></a></li>
+        <li><a href="gear-ratio-rpm-calculator.html"><span class="bi-en">Gear Ratio & Cruising RPM</span><span class="bi-zh">齿比与巡航转速</span></a></li>
+        <li><a href="fuel-economy-converter.html"><span class="bi-en">Fuel Economy Converter</span><span class="bi-zh">油耗单位换算</span></a></li>
+        <li><a href="ev-charging-cost-calculator.html"><span class="bi-en">EV Charging Cost & Time</span><span class="bi-zh">电动车充电成本与时间</span></a></li>
+        <li><a href="towing-payload-calculator.html"><span class="bi-en">Towing & Payload Check</span><span class="bi-zh">拖挂与载重核算</span></a></li>
+        <li><a href="tire-pressure-temperature-calculator.html"><span class="bi-en">Tire Pressure & Temperature</span><span class="bi-zh">胎压与温度换算</span></a></li>
+        <li><a href="engine-displacement-compression-calculator.html"><span class="bi-en">Displacement & Compression Ratio</span><span class="bi-zh">排量与压缩比</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Torquix — private, browser-based tire, wheel and running-cost calculators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Torquix is a planning and estimating aid, not a fitment guarantee or an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Torquix. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.TORQUIX_TOOL = "trip-cost";</script>
+<script src="../app.js"></script>
+</body>
+</html>
