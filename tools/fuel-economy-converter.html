@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fuel Economy Converter — Torquix</title>
+<meta name="description" content="Convert between US mpg, UK mpg, L/100 km and km/L instantly. Bilingual, no sign-up — handy when comparing a US-spec car with a metric-market one." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://torquix.com/tools/fuel-economy-converter.html" />
+<link rel="alternate" hreflang="en" href="https://torquix.com/tools/fuel-economy-converter.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://torquix.com/tools/fuel-economy-converter.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://torquix.com/tools/fuel-economy-converter.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Torquix" />
+<meta property="og:title" content="Fuel Economy Converter" />
+<meta property="og:description" content="Convert between US mpg, UK mpg, L/100 km and km/L instantly. Bilingual, no sign-up — handy when comparing a US-spec car with a metric-market one." />
+<meta property="og:url" content="https://torquix.com/tools/fuel-economy-converter.html" />
+<meta property="og:image" content="https://torquix.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Fuel Economy Converter",
+      "url": "https://torquix.com/tools/fuel-economy-converter.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Convert between US mpg, UK mpg, L/100 km and km/L instantly. Bilingual, no sign-up — handy when comparing a US-spec car with a metric-market one.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://torquix.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Torquix",
+          "item": "https://torquix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fuel Economy Converter",
+          "item": "https://torquix.com/tools/fuel-economy-converter.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are US and UK mpg different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They use different gallons. A US gallon is 3.785 L; a UK (imperial) gallon is 4.546 L. So the same real efficiency shows a higher number in UK mpg — about 20% higher — which is a constant source of confusion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a lower L/100 km better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Litres per 100 km is a direct consumption figure: less fuel per distance is better. It is the opposite of mpg, where a higher number is better."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is km/L used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is common in parts of Asia and shows how many kilometres one litre takes you. It sits between mpg and L/100 km in feel: higher is better, like mpg."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "inLanguage": "zh-CN",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "为什么美制与英制 mpg 不一样？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "它们用的是不同的加仑。美制加仑 3.785 升，英制（帝国）加仑 4.546 升。所以同样的真实效率在英制 mpg 下数字更高——约高 20%——这经常让人混淆。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L/100 km 越低越好吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。升/100 公里是直接的消耗量：每距离消耗的燃油越少越好。这与 mpg 相反，mpg 是越高越好。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "km/L 用来做什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "在亚洲部分地区常见，表示一升油能跑多少公里。它的“手感”介于 mpg 与 L/100 km 之间：和 mpg 一样越高越好。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Torquix</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Calculators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All calculators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Fuel Economy Converter</span><span class="bi-zh">油耗单位换算</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">The world measures fuel economy at least four different ways. This tool flips between them so a US mpg figure and a European L/100 km figure finally mean the same thing.</span><span class="bi-zh">这个世界至少用四种方式衡量油耗。本工具在它们之间切换，让美制 mpg 和欧洲 L/100 km 终于表示同一件事。</span></p>
+      <div id="tools-root"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+      <p><span class="bi-en"><span class="formula-line">L/100 km = 235.215 ÷ mpg(US)</span></span><span class="bi-zh"><span class="formula-line">L/100 km = 235.215 ÷ mpg(美制)</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">mpg(US) = 235.215 ÷ L/100 km</span></span><span class="bi-zh"><span class="formula-line">mpg(美制) = 235.215 ÷ L/100 km</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">mpg(UK) = mpg(US) × 1.20095  (UK gallon = 4.546 L vs US 3.785 L)</span></span><span class="bi-zh"><span class="formula-line">mpg(英制) = mpg(美制) × 1.20095（英制加仑 4.546 L，美制 3.785 L）</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">km/L = 100 ÷ L/100 km</span></span><span class="bi-zh"><span class="formula-line">km/L = 100 ÷ L/100 km</span></span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">Why are US and UK mpg different?</span><span class="bi-zh">为什么美制与英制 mpg 不一样？</span></summary>
+          <p><span class="bi-en">They use different gallons. A US gallon is 3.785 L; a UK (imperial) gallon is 4.546 L. So the same real efficiency shows a higher number in UK mpg — about 20% higher — which is a constant source of confusion.</span><span class="bi-zh">它们用的是不同的加仑。美制加仑 3.785 升，英制（帝国）加仑 4.546 升。所以同样的真实效率在英制 mpg 下数字更高——约高 20%——这经常让人混淆。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Is a lower L/100 km better?</span><span class="bi-zh">L/100 km 越低越好吗？</span></summary>
+          <p><span class="bi-en">Yes. Litres per 100 km is a direct consumption figure: less fuel per distance is better. It is the opposite of mpg, where a higher number is better.</span><span class="bi-zh">是的。升/100 公里是直接的消耗量：每距离消耗的燃油越少越好。这与 mpg 相反，mpg 是越高越好。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">What is km/L used for?</span><span class="bi-zh">km/L 用来做什么？</span></summary>
+          <p><span class="bi-en">It is common in parts of Asia and shows how many kilometres one litre takes you. It sits between mpg and L/100 km in feel: higher is better, like mpg.</span><span class="bi-zh">在亚洲部分地区常见，表示一升油能跑多少公里。它的“手感”介于 mpg 与 L/100 km 之间：和 mpg 一样越高越好。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other calculators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="tire-size-comparison.html"><span class="bi-en">Tire Size Comparison</span><span class="bi-zh">轮胎尺寸对比</span></a></li>
+        <li><a href="wheel-offset-backspacing.html"><span class="bi-en">Wheel Offset & Backspacing</span><span class="bi-zh">轮毂偏距与内背距</span></a></li>
+        <li><a href="speedometer-error-calculator.html"><span class="bi-en">Speedometer & Odometer Error</span><span class="bi-zh">码表与里程表误差</span></a></li>
+        <li><a href="gear-ratio-rpm-calculator.html"><span class="bi-en">Gear Ratio & Cruising RPM</span><span class="bi-zh">齿比与巡航转速</span></a></li>
+        <li><a href="trip-fuel-cost-calculator.html"><span class="bi-en">Trip Fuel Cost</span><span class="bi-zh">行程油费</span></a></li>
+        <li><a href="ev-charging-cost-calculator.html"><span class="bi-en">EV Charging Cost & Time</span><span class="bi-zh">电动车充电成本与时间</span></a></li>
+        <li><a href="towing-payload-calculator.html"><span class="bi-en">Towing & Payload Check</span><span class="bi-zh">拖挂与载重核算</span></a></li>
+        <li><a href="tire-pressure-temperature-calculator.html"><span class="bi-en">Tire Pressure & Temperature</span><span class="bi-zh">胎压与温度换算</span></a></li>
+        <li><a href="engine-displacement-compression-calculator.html"><span class="bi-en">Displacement & Compression Ratio</span><span class="bi-zh">排量与压缩比</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Torquix — private, browser-based tire, wheel and running-cost calculators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Torquix is a planning and estimating aid, not a fitment guarantee or an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Torquix. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.TORQUIX_TOOL = "fuel-econ";</script>
+<script src="../app.js"></script>
+</body>
+</html>
