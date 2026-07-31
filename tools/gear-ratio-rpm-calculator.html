@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gear Ratio & Cruising RPM — Torquix</title>
+<meta name="description" content="Find cruising RPM in any gear from tire size and final drive. Enter gear ratio, axle ratio, tire diameter and speed to see engine RPM — and how a tire change moves it." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://torquix.com/tools/gear-ratio-rpm-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://torquix.com/tools/gear-ratio-rpm-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://torquix.com/tools/gear-ratio-rpm-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://torquix.com/tools/gear-ratio-rpm-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Torquix" />
+<meta property="og:title" content="Gear Ratio & Cruising RPM" />
+<meta property="og:description" content="Find cruising RPM in any gear from tire size and final drive. Enter gear ratio, axle ratio, tire diameter and speed to see engine RPM — and how a tire change moves it." />
+<meta property="og:url" content="https://torquix.com/tools/gear-ratio-rpm-calculator.html" />
+<meta property="og:image" content="https://torquix.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Gear Ratio & Cruising RPM",
+      "url": "https://torquix.com/tools/gear-ratio-rpm-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Find cruising RPM in any gear from tire size and final drive. Enter gear ratio, axle ratio, tire diameter and speed to see engine RPM — and how a tire change moves it.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://torquix.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Torquix",
+          "item": "https://torquix.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gear Ratio & Cruising RPM",
+          "item": "https://torquix.com/tools/gear-ratio-rpm-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the 336 constant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It folds together the inches in a mile (63,360) and the circumference factor so you can solve RPM from mph, gear ratios and tire diameter in inches in one step. The km/h version uses 209.2."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will bigger tires lower my RPM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A taller tire covers more ground per engine revolution, so at the same road speed the engine turns slower. That can improve fuel use and reduce noise, but can also blunt acceleration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What RPM should I cruise at?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the engine, but many street engines are happiest cruising between roughly 1,800 and 2,800 rpm on the highway. Very low RPM can lug the engine; very high RPM wastes fuel and makes noise."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "inLanguage": "zh-CN",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "336 这个常数是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "它把一英里的英寸数（63,360）和周长系数合并在一起，让你一步从 mph、各齿比和轮胎英寸直径解出转速。公里/小时版本用 209.2。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "更大的轮胎会降低我的转速吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "会。更高的轮胎每转发动机多走一段路，所以同速下发动机转得更慢。这能改善油耗、降低噪音，但也可能削弱加速。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "巡航转速应该多少？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "取决于发动机，但很多道路发动机在高速巡航时最喜欢约 1,800 到 2,800 rpm 之间。转速过低会拖挡，过高则费油又吵。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Torquix</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Calculators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All calculators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Gear Ratio & Cruising RPM</span><span class="bi-zh">齿比与巡航转速</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Engine RPM at highway speed is set by three things: your gearing, your tire diameter and your speed. Change any one and the RPM moves. This tool shows where yours lands.</span><span class="bi-zh">高速巡航时的发动机转速由三件事决定：齿比、轮胎直径和车速。改变其中任何一项，转速都会变。本工具告诉你落在哪个转速。</span></p>
+      <div id="tools-root"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+      <p><span class="bi-en"><span class="formula-line">RPM = (speed in mph × 336 × axle ratio × gear ratio) ÷ tire diameter (inches)</span></span><span class="bi-zh"><span class="formula-line">转速 = (车速 mph × 336 × 主减速比 × 挡位齿比) ÷ 轮胎直径（英寸）</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">For km/h: RPM = (speed × 209.2 × axle × gear) ÷ diameter(in)</span></span><span class="bi-zh"><span class="formula-line">公里/小时：转速 = (车速 × 209.2 × 主减速比 × 齿比) ÷ 直径（英寸）</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Taller tire → lower RPM at the same speed; shorter tire → higher RPM</span></span><span class="bi-zh"><span class="formula-line">轮胎越高 → 同速下转速越低；轮胎越矮 → 转速越高</span></span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">What is the 336 constant?</span><span class="bi-zh">336 这个常数是什么？</span></summary>
+          <p><span class="bi-en">It folds together the inches in a mile (63,360) and the circumference factor so you can solve RPM from mph, gear ratios and tire diameter in inches in one step. The km/h version uses 209.2.</span><span class="bi-zh">它把一英里的英寸数（63,360）和周长系数合并在一起，让你一步从 mph、各齿比和轮胎英寸直径解出转速。公里/小时版本用 209.2。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Will bigger tires lower my RPM?</span><span class="bi-zh">更大的轮胎会降低我的转速吗？</span></summary>
+          <p><span class="bi-en">Yes. A taller tire covers more ground per engine revolution, so at the same road speed the engine turns slower. That can improve fuel use and reduce noise, but can also blunt acceleration.</span><span class="bi-zh">会。更高的轮胎每转发动机多走一段路，所以同速下发动机转得更慢。这能改善油耗、降低噪音，但也可能削弱加速。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">What RPM should I cruise at?</span><span class="bi-zh">巡航转速应该多少？</span></summary>
+          <p><span class="bi-en">It depends on the engine, but many street engines are happiest cruising between roughly 1,800 and 2,800 rpm on the highway. Very low RPM can lug the engine; very high RPM wastes fuel and makes noise.</span><span class="bi-zh">取决于发动机，但很多道路发动机在高速巡航时最喜欢约 1,800 到 2,800 rpm 之间。转速过低会拖挡，过高则费油又吵。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other calculators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="tire-size-comparison.html"><span class="bi-en">Tire Size Comparison</span><span class="bi-zh">轮胎尺寸对比</span></a></li>
+        <li><a href="wheel-offset-backspacing.html"><span class="bi-en">Wheel Offset & Backspacing</span><span class="bi-zh">轮毂偏距与内背距</span></a></li>
+        <li><a href="speedometer-error-calculator.html"><span class="bi-en">Speedometer & Odometer Error</span><span class="bi-zh">码表与里程表误差</span></a></li>
+        <li><a href="fuel-economy-converter.html"><span class="bi-en">Fuel Economy Converter</span><span class="bi-zh">油耗单位换算</span></a></li>
+        <li><a href="trip-fuel-cost-calculator.html"><span class="bi-en">Trip Fuel Cost</span><span class="bi-zh">行程油费</span></a></li>
+        <li><a href="ev-charging-cost-calculator.html"><span class="bi-en">EV Charging Cost & Time</span><span class="bi-zh">电动车充电成本与时间</span></a></li>
+        <li><a href="towing-payload-calculator.html"><span class="bi-en">Towing & Payload Check</span><span class="bi-zh">拖挂与载重核算</span></a></li>
+        <li><a href="tire-pressure-temperature-calculator.html"><span class="bi-en">Tire Pressure & Temperature</span><span class="bi-zh">胎压与温度换算</span></a></li>
+        <li><a href="engine-displacement-compression-calculator.html"><span class="bi-en">Displacement & Compression Ratio</span><span class="bi-zh">排量与压缩比</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Torquix — private, browser-based tire, wheel and running-cost calculators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Torquix is a planning and estimating aid, not a fitment guarantee or an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Torquix. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.TORQUIX_TOOL = "gearing";</script>
+<script src="../app.js"></script>
+</body>
+</html>
